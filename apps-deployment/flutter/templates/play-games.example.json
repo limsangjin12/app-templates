@@ -1,0 +1,28 @@
+{
+  "leaderboards": [
+    {
+      "leaderboardId": "com.example.app.score",
+      "scoreOrder": "LARGER_IS_BETTER",
+      "name": {
+        "en-US": "Best Score",
+        "ko-KR": "최고 점수",
+        "ja-JP": "ベストスコア",
+        "zh-CN": "最佳分数",
+        "zh-TW": "最佳分數"
+      }
+    }
+  ],
+  "achievements": [
+    {
+      "id": "first_play",
+      "points": 5,
+      "l": {
+        "en-US": ["First play", "Play once"],
+        "ko-KR": ["첫 플레이", "한 번 플레이"],
+        "ja-JP": ["初プレイ", "1回プレイ"],
+        "zh-CN": ["首次游戏", "玩一次"],
+        "zh-TW": ["首次遊戲", "玩一次"]
+      }
+    }
+  ]
+}

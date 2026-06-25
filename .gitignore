@@ -1,0 +1,50 @@
+.DS_Store
+
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+GoogleService-Info.plist
+google-services.json
+key.properties
+*.jks
+*.keystore
+service-account*.json
+*-sa.json
+
+# Build outputs
+build/
+DerivedData/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+Pods/
+*.xcarchive
+*.ipa
+*.pkg
+*.dSYM
+
+# Generated dependency folders
+node_modules/
+public-site/
+
+# Terraform local state/cache
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Xcode user state
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/

@@ -1,0 +1,9 @@
+{
+  "name": "apps-deployment-ios-scripts",
+  "private": true,
+  "type": "module",
+  "description": "iOS native (multi-target / widget / watch) deployment helpers — ASC API + xcodebuild glue.",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- macOS App Store 업로드용 export. method=app-store-connect 면
+         결과는 .pkg (App Distribution 서명). 각 앱은 이 파일을 복사한 뒤
+         provisioningProfiles 의 bundle id 와 profile 이름을 자기 것으로 교체. -->
+    <key>method</key>
+    <string>app-store-connect</string>
+
+    <key>destination</key>
+    <string>export</string>
+
+    <key>signingStyle</key>
+    <string>automatic</string>
+
+    <key>teamID</key>
+    <string>YOUR_TEAM_ID</string>
+
+    <!-- automatic signing 일 때는 signingCertificate / provisioningProfiles 생략 가능.
+         manual 로 전환하려면 아래 키들을 주석 해제하고 값 채우기:
+    <key>signingCertificate</key>
+    <string>Apple Distribution</string>
+    <key>provisioningProfiles</key>
+    <dict>
+        <key>com.example.myapp</key>
+        <string>MyApp Mac App Store Profile</string>
+    </dict>
+    -->
+
+    <key>uploadSymbols</key>
+    <true/>
+
+    <key>stripSwiftSymbols</key>
+    <true/>
+
+    <key>manageAppVersionAndBuildNumber</key>
+    <false/>
+</dict>
+</plist>

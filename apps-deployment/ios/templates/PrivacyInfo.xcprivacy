@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Privacy Manifest 기본 템플릿 — 추적/수집 없는 앱 기준.
+  앱 타깃의 Resources 또는 Bundle 에 포함되도록 추가하면 IPA 안에 들어간다.
+
+  데이터 수집을 시작하면 NSPrivacyCollectedDataTypes 에 항목 추가:
+    https://developer.apple.com/documentation/bundleresources/privacy_manifest_files
+
+  Required Reason API 사용 시 NSPrivacyAccessedAPITypes 에 항목 추가:
+    UserDefaults / FileTimestamp / SystemBootTime / DiskSpace / ActiveKeyboards
+    각 카테고리별 reason code 명시 필요.
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSPrivacyTracking</key>
+    <false/>
+
+    <key>NSPrivacyTrackingDomains</key>
+    <array/>
+
+    <key>NSPrivacyCollectedDataTypes</key>
+    <array/>
+
+    <key>NSPrivacyAccessedAPITypes</key>
+    <array>
+        <!-- 사용 시 항목 추가. 예시 (UserDefaults):
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <string>CA92.1</string>
+            </array>
+        </dict>
+        -->
+    </array>
+</dict>
+</plist>

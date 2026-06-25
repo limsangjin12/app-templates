@@ -1,0 +1,27 @@
+{
+  "en-US": {
+    "title": "My App",
+    "short": "Up to 80 chars short pitch.",
+    "full": "Up to 4000 chars full description.\n\n▶ Section\n• Bullet 1\n• Bullet 2"
+  },
+  "ko-KR": {
+    "title": "내 앱",
+    "short": "최대 80자 짧은 소개.",
+    "full": "최대 4000자 전체 설명."
+  },
+  "ja-JP": {
+    "title": "マイアプリ",
+    "short": "最大80字の短い紹介。",
+    "full": "最大4000字の詳細説明。"
+  },
+  "zh-CN": {
+    "title": "我的应用",
+    "short": "最多80字符的简短介绍。",
+    "full": "最多4000字符的完整描述。"
+  },
+  "zh-TW": {
+    "title": "我的應用",
+    "short": "最多80字符的簡短介紹。",
+    "full": "最多4000字符的完整描述。"
+  }
+}

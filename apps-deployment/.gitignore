@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# 에디터
+.vscode/
+.idea/
+
+# 비밀 / 환경 — 절대 커밋 금지
+.env
+.env.local
+*.p8
+*.p12
+*.mobileprovision
+*.cer
+secrets/
+private_keys/
+
+# 임시 산출물 (테스트 시 생성)
+build/
+*.xcarchive
+*.ipa

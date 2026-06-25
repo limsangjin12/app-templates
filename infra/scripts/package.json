@@ -1,0 +1,16 @@
+{
+  "name": "apps-infra-scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify-search-console": "node verify-search-console.mjs",
+    "update-asc-urls": "node update-asc-urls.mjs",
+    "update-play-urls": "node update-play-urls.mjs",
+    "update-oauth-consent": "node update-oauth-consent.mjs"
+  },
+  "dependencies": {
+    "google-auth-library": "^9.14.0",
+    "googleapis": "^144.0.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

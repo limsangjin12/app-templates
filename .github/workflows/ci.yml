@@ -1,0 +1,34 @@
+name: Template CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.9.8
+
+      - name: 문서 규칙 검사
+        run: node scripts/check-docs.mjs
+
+      - name: JavaScript 문법 검사
+        run: find apps-deployment infra scripts -name '*.mjs' -print0 | xargs -0 -n1 node --check
+
+      - name: Shell 문법 검사
+        run: find apps-deployment -name '*.sh' -print0 | xargs -0 -n1 bash -n
+
+      - name: Terraform 포맷 검사
+        run: terraform fmt -check -recursive infra/aws
+
+      - name: 민감정보 패턴 검사
+        run: node scripts/check-sensitive.mjs

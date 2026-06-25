@@ -1,0 +1,7 @@
+# Copy to <flutter-project>/android/key.properties (gitignored) and fill in.
+# Then ensure <flutter-project>/android/app/build.gradle.kts loads this file
+# via Properties.load(rootProject.file("key.properties")).
+storeFile=/Users/<you>/.android-keys/<app>-release.jks
+storePassword=CHANGE_ME
+keyAlias=<app>
+keyPassword=CHANGE_ME

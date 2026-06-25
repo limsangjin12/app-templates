@@ -1,0 +1,16 @@
+{
+  "name": "apps-template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "new-app": "node scripts/new-app.mjs",
+    "check-docs": "node scripts/check-docs.mjs",
+    "check-env": "node scripts/check-env.mjs",
+    "build-static-site": "node infra/scripts/build-static-site.mjs",
+    "check-sensitive": "node scripts/check-sensitive.mjs",
+    "ci": "node scripts/check-docs.mjs && node scripts/check-sensitive.mjs && find apps-deployment infra scripts -name '*.mjs' -print0 | xargs -0 -n1 node --check && find apps-deployment -name '*.sh' -print0 | xargs -0 -n1 bash -n && terraform fmt -check -recursive infra/aws"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

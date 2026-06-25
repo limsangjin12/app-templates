@@ -1,0 +1,10 @@
+{
+  "name": "apps-deployment-flutter-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Flutter store-deployment helpers (Play Console + App Store Connect APIs).",
+  "dependencies": {
+    "google-auth-library": "^9.14.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

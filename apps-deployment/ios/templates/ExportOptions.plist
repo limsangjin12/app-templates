@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  App Store Connect 업로드용 export 설정 템플릿.
+  앱 repo 의 root 에 복사 후 <TEAM_ID> 를 본인 팀 ID 로 치환.
+
+  Team ID 확인:
+    xcodebuild -showBuildSettings -project YourApp.xcodeproj | grep DEVELOPMENT_TEAM
+  또는 Apple Developer 사이트 → Membership → Team ID
+
+  method: Xcode 26+ 부터 "app-store" 는 deprecated, "app-store-connect" 사용.
+          (이전 값은 여전히 동작하지만 매번 경고 출력)
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>method</key>
+    <string>app-store-connect</string>
+
+    <key>destination</key>
+    <string>export</string>
+
+    <key>signingStyle</key>
+    <string>automatic</string>
+
+    <key>teamID</key>
+    <string><TEAM_ID></string>
+
+    <key>uploadSymbols</key>
+    <true/>
+
+    <key>stripSwiftSymbols</key>
+    <true/>
+
+    <!-- 빌드 번호는 project.yml / Xcode 에서 직접 관리 (자동 증가 안 함) -->
+    <key>manageAppVersionAndBuildNumber</key>
+    <false/>
+</dict>
+</plist>
